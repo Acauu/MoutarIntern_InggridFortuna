@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
+<style>
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 25%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+hr { 
+display: block; 
+margin-before: 0.5em; 
+margin-after: 0.5em; 
+margin-start: auto; 
+margin-end: auto; 
+overflow: hidden; 
+border-style: inset; 
+border-width: 1px;
+color : black;
+}
+
+</style>
+</head>
+<body>
+ <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="" class="navbar-brand">Lab Luxurry</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#"> Projects</a></li> 
+            
+                <li id="login"><a href="#" data-toggle="modal" data-target="#myModal">About</a></li>
+                <li id="logout"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<img src="1.jpg" alt="Cinque Terre" >
+<h1 style="font-size:100px; color:rgb(17, 16, 16); margin:10px;">Lab Luxurry</h1>
+
+<p style="font-size:30px; color: rgb(20, 19, 19);"><em>
+  Multibranded online store sells all your needs and shipping worldwide. You can also preorder your desire-items and we shall deliver</em></p>
+<div>
+<div>
+
+<div>
+</div>
+</div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="2.jpg">
+      <img src="2.jpg" width="600" height="400">
+    </a>
+    <div class="desc">Balenciaga Nano Black</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="3.jpg">
+      <img src="3.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Jacquemus suede brown</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="4.jpg">
+      <img src="4.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Celine Luggage Bag</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="5.jpg">
+      <img src="5.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Jacquemus Mini</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="6.jpg">
+      <img src="6.jpg" width="600" height="400">
+    </a>
+    <div class="desc">Balenciaga Sweater</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="7.jpg">
+      <img src="7.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Jacquemus Vintage</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="8.jpg">
+      <img src="8.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Chanel BNIB</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="9.jpg">
+      <img src="9.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Louis Vuitton Compact Bag</div>
+  </div>
+</div>
+<div class="clearfix"></div>
+<br>
+
+<h2>Also read our blog</h2>
+<p>Interested in visiting South Sulawesi? An island with beautiful white-sand beach. </p>
+<br>
+
+<hr>
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="noice.jpg" alt="noice" style="width:100%">
+      <div class="container">
+        <h2>Noice Cafe</h2>
+        <p class="title">Penghibur Street</p>
+        <p>Some text that describes me lorem.</p>
+        <p>Best coffee in town </p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="bira.jpg" alt="bira" style="width:100%">
+      <div class="container">
+        <h2>Bira Beach</h2>
+        <p class="title">Kabupaten Bulukumba</p>
+        <p>Some text that describes me lorem..</p>
+        <p>Beautiful beach and private cottage.</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="rammang.jpg" alt="rammang" style="width:100%">
+      <div class="container">
+        <h2>Rammang - rammang</h2>
+        <p class="title">Maros</p>
+        <p>Some text that describes me lorem.</p>
+        <p>The largest stalagnit cave </p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="bulukumba.jpg" alt="bulukumba" style="width:100%">
+      <div class="container">
+        <h2>Jembatan Kaca</h2>
+        <p class="title">Bulukumba</p>
+        <p>Some text that describes me lorem..</p>
+        <p>See the sunset rise from the sea.</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-body">
+<div class="form-group">
+  <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
+</div>
+<div class="form-group">
+  <input type="password" class="form-control" name="email" id="email" placeholder="Email" required>
+</div>
+<div class="form-group">
+  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+</div>
+<div class="form-group">
+  <div class="input-group">
+    <input type="password" class="form-control" name="comment" id="comment" placeholder="Comment" required>
+  </div>
+<div>
+  <button type="button" class="btn btn-default" >SEND MESSAGE</button>
+</div>
+</div>
+</div>
+<div style="padding:6px;">
+<br>
+  <p>Reach us on our social media</p>
+  <p>IG : @LabLuxuryy</p>
+</div>
+
+<img src="1.jpg" alt="Cinque Terre" >
+
+</body>
+</html>
